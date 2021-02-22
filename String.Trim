@@ -1,0 +1,11 @@
+README.md
+String.Trim
+_build
+config
+deps
+lib
+mix.exs
+mix.lock
+numbers.csv
+priv
+test
