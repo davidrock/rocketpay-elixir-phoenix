@@ -2,7 +2,7 @@ defmodule RocketpayWeb.UsersController do
   use RocketpayWeb, :controller
 
   alias Rocketpay.User
-  alias Ecto.Repo
+  # alias Ecto.Repo
 
   action_fallback RocketpayWeb.FallbackController
 
@@ -14,10 +14,10 @@ defmodule RocketpayWeb.UsersController do
     end
   end
 
-  def all(conn) do
-    users = Repo.all(Rocketpay.User)
-    conn
-    |> put_status(:created)
-    |> render("all.json", users: users)
-  end
+  # def all(conn) do
+  #   users = Repo.all(Rocketpay.User)
+  #   conn
+  #   |> put_status(:created)
+  #   |> render("all.json", users: users)
+  # end
 end
