@@ -7,8 +7,4 @@ defmodule RocketpayWeb.FallbackController do
     |> put_view(RocketpayWeb.ErrorView)
     |> render("400.json", result: result)
   end
-
-
-
-
 end
